@@ -10,10 +10,10 @@ function Navbar() {
       <div className="flex justify-between w-full ml-16">
         <ul className="list-none flex gap-6 items-center">
           <li>
-            <NavLink to="/" className=" text-gray-400 aria-[current=page]:text-black">Books</NavLink>
+            <NavLink to="/" className=" text-gray-400 aria-[current=page]:text-black uppercase">Books</NavLink>
           </li>
           <li>
-            <NavLink to="/categories" className=" text-gray-400 aria-[current=page]:text-black">Categories</NavLink>
+            <NavLink to="/categories" className=" text-gray-400 aria-[current=page]:text-black uppercase">Categories</NavLink>
           </li>
         </ul>
         <div className="border-gray-100 border-2 border-solid rounded-full p-2">
