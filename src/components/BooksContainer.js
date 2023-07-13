@@ -27,9 +27,12 @@ function BookContainer() {
   const handeDelete = (id) => {
     setBook(books.filter((book) => book.id !== id));
   };
+
   return (
     <main className=" h-[50vh] overflow-auto mt-9 px-24 pb-20">
-      <Book books={books} onDelete={handeDelete} />
+      { books.map((books) => (
+        <Book key={books.id} books={books} onDelete={handeDelete} />
+      ))}
     </main>
   );
 }
