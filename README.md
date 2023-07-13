@@ -140,12 +140,9 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 To run tests, run the following command:
 
-soon
-
-<!--
 ```sh
-
-``` -->
+npm test
+```
 
 ### Deployment
 
@@ -160,7 +157,7 @@ soon
 👤 **MoFuhidy**
 
 - GitHub: [@Mofuhidy](https://github.com/Mofuhidy)
-- LinkedIn: [@Mofuhidy](https://www.linkedin.com/in/mohammed-alfuhidy-b0081319a/)
+- LinkedIn: [@Mofuhidy](https://www.linkedin.com/in/mo-fuhidy/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
