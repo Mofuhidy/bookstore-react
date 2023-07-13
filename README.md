@@ -1,20 +1,15 @@
-# Bookstore-React
-
-The "Bookstore" is a website that allow you to Display a list of books, Add a book, and Remove a selected book
-
 <a name="readme-top"></a>
 
 <div align="center">
   <br/>
-  <h3><b>Bookstore microverse project</b></h3>
+  <h1><b>Bookstore microverse project</b></h1>
 
 </div>
 
 # 📗 Table of Contents
 
-- [Bookstore-React](#bookstore-react)
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Math Magicians\] ](#-math-magicians-)
+- [📖 \[Bookstore\] ](#-bookstore-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -36,7 +31,7 @@ The "Bookstore" is a website that allow you to Display a list of books, Add a bo
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 [Math Magicians] <a name="about-project"></a>
+# 📖 [Bookstore] <a name="about-project"></a>
 
 **"Bookstore"** is a website that allow you to Display a list of books, Add a book, and Remove a selected book
 
@@ -65,7 +60,7 @@ The "Bookstore" is a website that allow you to Display a list of books, Add a bo
 
 <!-- ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://math-magicians-app-6pdl.onrender.com)
+- [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
