@@ -1,6 +1,10 @@
+import AddNewBook from '../components/AddNewBook';
+
 function Books() {
   return (
-    <div>Books</div>
+    <main className="booksPage">
+      <AddNewBook />
+    </main>
   );
 }
 export default Books;
