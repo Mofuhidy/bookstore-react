@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav>
-      <ul>
-        <li>
+    <nav className="flex">
+      <h1 className=" text-2xl">Bookstore CMS</h1>
+      <ul className="list-none flex">
+        <li className=" text-red-700">
           <Link to="/">Books</Link>
         </li>
         <li>
@@ -15,4 +16,4 @@ function Navbar() {
     </nav>
   );
 }
-export default Navbar
+export default Navbar;
