@@ -43,6 +43,7 @@
   <summary>Client</summary>
   <ul>
     <li><a href="#">React</a></li>
+    <li><a href="#">Redux</a></li>
   </ul>
 </details>
 
