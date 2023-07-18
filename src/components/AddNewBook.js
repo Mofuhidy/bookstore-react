@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/booksSlice';
+import { addBookByAPI } from '../redux/books/booksSlice';
 
 function AddNewBook() {
   const [title, setTitle] = useState('');
@@ -16,7 +16,7 @@ function AddNewBook() {
       author,
       category: 'Sport',
     };
-    dispatch(addBook(bookToSubmit));
+    dispatch(addBookByAPI(bookToSubmit));
     setTitle('');
     setAuthor('');
   };

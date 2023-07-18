@@ -78,6 +78,18 @@ export const booksSlice = createSlice({
       state.loading = 'failed';
       state.error = action.error.message;
     });
+
+    // builder for the add book
+    builder.addCase(addBookByAPI.pending, (state) => {
+      state.loading = 'pending';
+    }).addCase(addBookByAPI.fulfilled, (state, action) => {
+      state.loading = 'succeeded';
+      state.books = [...state.books, action.payload.book];
+      state.error = '';
+    }).addCase(addBookByAPI.rejected, (state, action) => {
+      state.loading = 'failed';
+      state.error = action.error.message;
+    });
   },
 
 });
