@@ -31,10 +31,10 @@ export const addBookByAPI = createAsyncThunk('books/addBook', async (book, thunk
   }
 });
 
-export const deleteBookByAPI = createAsyncThunk('books/deleteBook', async (book, thunkAPI) => {
+export const deleteBookByAPI = createAsyncThunk('books/deleteBook', async (bookId, thunkAPI) => {
   try {
-    const deleteBook = await axios.delete(`${BASEURL}${book.item_id}`);
-    return { book, deleteBook };
+    const deleteBook = await axios.delete(`${BASEURL}${bookId}`);
+    return { bookId, response: deleteBook.data };
   } catch (error) {
     thunkAPI.rejectWithValue(error);
     return error;
@@ -87,6 +87,20 @@ export const booksSlice = createSlice({
       state.books = [...state.books, action.payload.book];
       state.error = '';
     }).addCase(addBookByAPI.rejected, (state, action) => {
+      state.loading = 'failed';
+      state.error = action.error.message;
+    });
+
+    // builder for the remove book
+    builder.addCase(deleteBookByAPI.pending, (state) => {
+      state.loading = 'pending';
+    }).addCase(deleteBookByAPI.fulfilled, (state, action) => {
+      state.loading = 'succeeded';
+      state.books = state.books.filter(
+        (curr) => curr.item_id !== action.payload.bookId,
+      );
+      state.error = '';
+    }).addCase(deleteBookByAPI.rejected, (state, action) => {
       state.loading = 'failed';
       state.error = action.error.message;
     });

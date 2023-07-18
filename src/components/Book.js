@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { deleteBookByAPI } from '../redux/books/booksSlice';
 
 function Book({ books }) {
   const {
@@ -10,7 +10,7 @@ function Book({ books }) {
   const dispatch = useDispatch();
 
   const handleClick = () => {
-    dispatch(removeBook(books.item_id));
+    dispatch(deleteBookByAPI(books.item_id));
   };
 
   return (
